@@ -66,3 +66,8 @@ input {
 	width: 50%;
 	margin-bottom: 20px;
 }
+
+.form-message {
+	margin-left: 40%;
+	font-size: .8em;
+}

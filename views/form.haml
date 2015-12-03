@@ -1,4 +1,4 @@
-%form.pagination-centered{:action => "/form", :method => "post"}
+%form.pagination-centered{:action => "/", :method => "post"}
 	%h1 See the weather
 	%br
 	.form-group
@@ -7,6 +7,9 @@
 	.form-group
 		%label.control-label{:for => "inputCount"} Count of days
 		%input#inputCount.form-control{:placeholder => "Count of days", :name => "days", :type => "number"}/
+		%br
+		%span.form-message *A week for default
+		%br
 	.form-group
 		%button.btn.btn-success{:type => "submit"} Submit
 			
