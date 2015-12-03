@@ -1,0 +1,5 @@
+gem 'sinatra'
+gem 'rf-rest-open-uri'
+gem 'rest-client'
+gem 'json'
+gem 'haml'

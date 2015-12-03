@@ -1,0 +1,50 @@
+!!!
+%html
+  %head
+    %title = ForecastIO.forecast(37.8267, -122.423, time: Time.new(2016, 3, 11).to_i)
+    %link(rel="stylesheet" href="css/bootstrap.css")
+    %link(rel="stylesheet" href="bootstrap-responsive.css")
+    %link(rel="stylesheet" href="css/style.css")
+    %script(src="js/bootstrap.js")
+  %body
+    #wrapper
+      #header
+        .head
+          %a{:href => "/"}
+            %h1
+              City weather 
+              %img{:alt => "logo", :src => "img/windy3.png"}/
+        /************************ 
+        / .login-form
+        /   %h2 Log In
+        /   %form
+        /     .form-group.row
+        /       %label.col-sm-2.form-control-label{:for => "inputEmail3"} Email
+        /       .col-sm-10
+        /         %input#inputEmail3.form-control{:placeholder => "Email", :type => "email"}/
+        /     .form-group.row
+        /       %label.col-sm-2.form-control-label{:for => "inputPassword3"} Password
+        /       .col-sm-10
+        /         %input#inputPassword3.form-control{:placeholder => "Password", :type => "password"}/
+        /     .form-group.row
+        /       .col-sm-10
+        /         .checkbox
+        /           %label
+        /             %input{:type => "checkbox"}/
+        /             Check me out
+        /     .form-group.row
+        /       .col-sm-offset-2.col-sm-10
+        /         %button.btn.btn-secondary{:type => "submit"} Sign in
+        /************************ end
+        .menu
+          %a{:href => "/"}
+            %h2 Home      
+        
+      #content
+        =yield
+ 
+      / #footer
+      /   %p
+      /     This is the footer 
+
+

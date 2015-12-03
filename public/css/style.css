@@ -1,0 +1,51 @@
+*{
+	margin: 0 auto;
+}
+#wrapper {
+	/*margin: 1% 10% 2% 10%;*/
+}
+a, a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+#header {
+	height: 200px;
+	width: 100%; 
+	background-image: url(/img/green-cities.jpg); 
+    /*background-color: #83FF5C;*/
+}
+
+.head {
+	color: #333;
+	text-align: right;
+	margin: 6px;
+}
+.head h1 {
+	font-size: 6em;
+}	
+.head img {	
+	margin-left: -0.3em;
+	margin-right: 0.5em;
+	height: 1em;
+}
+.login-form{
+	margin-left: 100px;
+	width: 25%;
+	padding: 7px;
+	padding-left: 20px;
+	background-color: #eee;
+	opacity: 0.8;
+}
+.login-form form{
+	padding-left: 20px;
+}
+.menu {
+	padding: 5px;
+	margin-top: 44px;
+	margin-left: 84px;
+}
+.menu a{
+	font-size: 2em;
+	color: white;
+}
