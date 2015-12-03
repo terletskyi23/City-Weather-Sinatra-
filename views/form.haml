@@ -1,0 +1,12 @@
+%form.pagination-centered{:action => "/form", :method => "post"}
+	%h1 See the weather
+	%br
+	.form-group
+		%label.control-label{:for => "inputCity"} City name
+		%input#inputCity.form-control{:placeholder => "City name", :name => "city", :type => "text"}/
+	.form-group
+		%label.control-label{:for => "inputCount"} Count of days
+		%input#inputCount.form-control{:placeholder => "Count of days", :name => "days", :type => "number"}/
+	.form-group
+		%button.btn.btn-success{:type => "submit"} Submit
+			

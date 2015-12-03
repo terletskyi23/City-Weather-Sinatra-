@@ -6,8 +6,18 @@ require 'haml'
 set :haml, :format => :html5
 
 class City_Weather < Sinatra::Base
+	@city_name
+	@days
+
+	get '/form' do
+	  haml :form
+	end
+
 	get '/' do
-	  api_result = RestClient.get 'http://api.openweathermap.org/data/2.5/forecast/daily?q=Lviv&mode=json&units=metric&cnt=14&appid=e289605282a4562afea94a0ffe4ffaa8'
+		@city_name = "Lviv"
+		@days = 14
+
+	  api_result = RestClient.get "http://api.openweathermap.org/data/2.5/forecast/daily?q=#{@city_name}&mode=json&units=metric&cnt=#{@days}&appid=e289605282a4562afea94a0ffe4ffaa8"
 	  received_hash = JSON.parse(api_result)
 	 
 	  city = received_hash["city"]["name"]
@@ -25,10 +35,14 @@ class City_Weather < Sinatra::Base
 	  	output += "<td>speed: #{w["speed"].to_s}</td>"
 	  	output += "<td>deg: #{w["deg"].to_s}</td>"
 	  	output += "<td>clouds: #{w["clouds"].to_s}</td>"
-	  	output += "<td>rain: #{w["rain"].to_s}</td>"
+	  	output += "<td>rain: #{w["rain"].to_s}</td></tr>"
 	  end
 
 	  haml :index, :locals => {city: city, country: country, output: output}
 	end
 
+	not_found do
+	  status 404
+	  'not found'
+	end
 end

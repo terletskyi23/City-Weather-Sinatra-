@@ -49,3 +49,20 @@ a, a:hover {
 	font-size: 2em;
 	color: white;
 }
+
+/*--------------------*/
+h1.output{
+	margin:40px 0px;
+}
+table.table-style{
+	width: 90%;
+} 
+
+form{
+	margin: 50px auto;
+}
+
+input {
+	width: 50%;
+	margin-bottom: 20px;
+}
