@@ -14,6 +14,9 @@ a, a:hover {
 	background-image: url(/img/green-cities.jpg); 
     /*background-color: #83FF5C;*/
 }
+#footer {
+	height: 100px;
+}
 .head {
 	color: #333;
 	text-align: right;

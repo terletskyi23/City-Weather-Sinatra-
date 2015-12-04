@@ -1,7 +1,9 @@
 !!!
 %html
   %head
-    %title City weather
+    %title City Weather
+    %meta{:content => "City, Weather, Forecast, http://openweathermap.org, Lviv, LITS, Terletskyi V.T., VST", :name => "City Weather"}
+    %meta{:content => "A little web application. Used Ruby, Sinatra, Haml, JSON. API from http://openweathermap.org. Home task for Lviv LITS. By Terletskyi V.T. VST", :name => "description"}
     %link(rel="stylesheet" href="css/bootstrap.css")
     %link(rel="stylesheet" href="bootstrap-responsive.css")
     %link(rel="stylesheet" href="css/style.css")
@@ -12,30 +14,8 @@
         .head
           %a{:href => "/"}
             %h1
-              City weather 
+              City Weather 
               %img{:alt => "logo", :src => "img/windy3.png"}/
-        /************************ 
-        / .login-form
-        /   %h2 Log In
-        /   %form
-        /     .form-group.row
-        /       %label.col-sm-2.form-control-label{:for => "inputEmail3"} Email
-        /       .col-sm-10
-        /         %input#inputEmail3.form-control{:placeholder => "Email", :type => "email"}/
-        /     .form-group.row
-        /       %label.col-sm-2.form-control-label{:for => "inputPassword3"} Password
-        /       .col-sm-10
-        /         %input#inputPassword3.form-control{:placeholder => "Password", :type => "password"}/
-        /     .form-group.row
-        /       .col-sm-10
-        /         .checkbox
-        /           %label
-        /             %input{:type => "checkbox"}/
-        /             Check me out
-        /     .form-group.row
-        /       .col-sm-offset-2.col-sm-10
-        /         %button.btn.btn-secondary{:type => "submit"} Sign in
-        /************************ end
         .menu
           %a{:href => "/"}
             %h2 Home      
@@ -43,8 +23,5 @@
       #content
         =yield
  
-      / #footer
-      /   %p
-      /     This is the footer 
-
-
+      #footer
+        %hr/
