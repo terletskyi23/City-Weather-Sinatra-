@@ -8,14 +8,12 @@ a, a:hover {
 	color: #333;
 	text-decoration: none;
 }
-
 #header {
 	height: 200px;
 	width: 100%; 
 	background-image: url(/img/green-cities.jpg); 
     /*background-color: #83FF5C;*/
 }
-
 .head {
 	color: #333;
 	text-align: right;
@@ -70,4 +68,9 @@ input {
 .form-message {
 	margin-left: 40%;
 	font-size: .8em;
+}
+.wind-arrow {
+	max-height: 1.3em; 
+	max-width: 1.3em;
+	margin-left: 1.2em;
 }
