@@ -1,7 +1,4 @@
-require 'sinatra'
-require 'json'
-require 'rest_client'
-require 'haml'
+gem 'sinatra', '~> 1.4', '>= 1.4.6'
 
 set :haml, :format => :html5
 
