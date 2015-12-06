@@ -73,7 +73,18 @@ input {
 	font-size: .8em;
 }
 .wind-arrow {
-	max-height: 1.3em; 
-	max-width: 1.3em;
-	margin-left: 1.2em;
+	max-height: 2.3em; 
+	max-width: 2.3em;
+}
+
+.th-color{
+	background:#507F3B;
+	font-size: 1.24rem;
+    color: white;	
+}
+.tr-color{
+	background:#79BD42;
+}
+.table td{
+	text-align: center;
 }

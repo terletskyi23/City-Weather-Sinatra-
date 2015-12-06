@@ -22,7 +22,7 @@ class City_Weather < Sinatra::Base
 		  country = received_hash["city"]["country"]
 		  i = 0
 		  # titles
-		  output = "<tr><th> № </th><th> Date </th><th> Weather </th><th colspan='4'> Temperature </th><th> Wind </th>"
+		  output = "<tr class='th-color'><th> № </th><th> Date </th><th> Weather </th><th colspan='4'> Temperature </th><th> Wind </th>"
 		  output += "<th colspan='4'> Other Information </th></tr>"
 		  weathers = received_hash["list"]
 
@@ -32,7 +32,7 @@ class City_Weather < Sinatra::Base
 		  		exist_nice_day = true
 			  	date = Time.at(w["dt"]).strftime("%d.%m.%y")
 			  	# head 1
-			  	output += "<tr>"
+			  	output += "<tr class='tr-color'>"
 				  	output += "<td rowspan='4'> #{i.to_s} </td>" 
 				  	output += "<td rowspan='4'> #{date} </td>" 
 				  	output += "<td> #{w["weather"][0]["main"].to_s} </td>"
@@ -58,7 +58,7 @@ class City_Weather < Sinatra::Base
 				  	end
 			  	output += "</tr>"	
 			  	# head 2
-			  	output += "<tr>"
+			  	output += "<tr class='tr-color'>"
 			  		output += "<td> t, morning </td><td> t, day </td><td> t, evening</ td><td> t, night </td>"
 			  		output += "<td>Speed</td>"
 			  	output += "</tr>"	
